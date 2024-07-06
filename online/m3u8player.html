@@ -20,8 +20,10 @@
   <script>
     const urlParams = new URLSearchParams(queryString);
     const url = urlParams.get('url');
-    document.getElementById('vid').href = url;
+    document.getElementById('vid').src = url;
   </script>
-  <video id="vid" />
+  <video controls>
+    <source id="vid" src="" type="application/x-mpegURL">
+  </video>
 </body>
 </html>
