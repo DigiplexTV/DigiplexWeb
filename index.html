@@ -33,6 +33,9 @@
 				    el.classList.remove("active");
 				});
 				newChannel.classList.add("active");
+				for (const child of newChannel.children) {
+				  child.classList.add("active");
+				}
 				document.getElementById("IPTV").src = url;
 			  }
 			  function changeChannel1() {
