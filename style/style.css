@@ -113,19 +113,19 @@ body {
 .EPGtext {
   text-align: center;
   position: absolute;
-  width: 319px;
+  width: 326px;
   color: white;
-  margin: -12px;
-  font-size: 13pt;
+  margin: -16px;
+  font-size: 20pt;
 }
 
 .contentEPGtext {
   text-align: center;
   position: absolute;
-  width: 284px;
+  width: 296px;
   color: white;
-  margin: 13px;
-  font-size: 13pt;
+  margin: 7px;
+  font-size: 20pt;
 }
 
 .channelEPG.active, .contentEPG.active {
