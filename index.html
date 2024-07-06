@@ -29,7 +29,7 @@
 				<iframe id="IPTV" src="" width="532" height="300"></iframe>
 			<script>
                           function changeChannel(newChannel,url) {
-				document.querySelector('.channelinfoframe #timeinfo .channelinfo .name .channelinfotext').textContent = newChannel.getAttribute('channel-name')
+				document.querySelector('.channelinfoframe #timeinfo .channelinfo .name .channelinfotext').textContent = newChannel.getAttribute('channel-name');
 				var alreadyActive = document.querySelectorAll(".active");
 				[].forEach.call(alreadyActive, function(el) {
 				    el.classList.remove("active");
