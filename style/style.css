@@ -125,9 +125,11 @@ body {
 }
 
 .contentEPGtext {
-  text-align: center;
   position: absolute;
   width: 296px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   color: white;
   margin: 7px;
   font-size: 20pt;
