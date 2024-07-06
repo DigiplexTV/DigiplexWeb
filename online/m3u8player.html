@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>This document must not be public.</title>
-</head>
-<body>
-  <style>
-    #vid {
-     width: 100vw;
-     height: 100vh;
-     object-fit: cover;
-     position: fixed;
-     left: 0;
-     right: 0;
-     top: 0;
-     bottom: 0;
-     z-index: -1;
-    }
-  </style>
-  <script>
-    const urlParams = new URLSearchParams(queryString);
-    const url = urlParams.get('url');
-    document.getElementById('vid').src = url;
-  </script>
-  <video controls>
-    <source id="vid" src="" type="application/x-mpegURL">
-  </video>
-</body>
-</html>
+<script>
+  const urlParams = new URLSearchParams(queryString);
+  const url = urlParams.get('url');
+  document.getElementById('vid').src = url;
+</script>
+<video controls>
+  <source id="vid" src="" type="application/x-mpegURL">
+</video>
