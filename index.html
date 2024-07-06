@@ -29,7 +29,7 @@
 			<script>
                           function changeChannel(newChannel,url) {
 				var alreadyActive = document.querySelectorAll(".active");
-				[].forEach.call(elems, function(el) {
+				[].forEach.call(alreadyActive, function(el) {
 				    el.classList.remove("active");
 				});
 				newChannel.classList.add("active");
@@ -48,7 +48,7 @@
 				document.getElementById("IPTV").src = newUrl;
 			  }
 			  function changeChannel4() {
-				const newUrl = "online/player3.html?get=https://channel02-notusa.akamaized.net/hls/live/2023914/event01/index.m3u8";;
+				const newUrl = "online/player3.html?get=https://channel02-notusa.akamaized.net/hls/live/2023914/event01/index.m3u8";
 				document.getElementById("IPTV").src = newUrl;
 			  }
 			  function changeChannel5() {
@@ -71,31 +71,31 @@
 </div>
 
 <div class="EPG">
-	<button onclick="changeChannel1()" class="channelEPG active">
+	<button onclick="changeChannel(this,'online/player3.html?get=https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8')" class="channelEPG active">
 	<p class="EPGtext active">001 AZTECAUNO</p>
 	</button>
-	<div class="contentEPG active">
+	<div class="contentEPG">
 	<p class="contentEPGtext active">PLACEHOLDER</p>
 	</div>
-	<button onclick="changeChannel2()" class="channelEPG">
+	<button onclick="changeChannel(this,'channelunavailable.html')" class="channelEPG">
 	<p class="EPGtext">002 LASESTRELLAS</p>
 	</button>
 	<div class="contentEPG">
 	<p class="contentEPGtext">PLACEHOLDER</p>
 	</div>
-	<button onclick="changeChannel3()" class="channelEPG">
+	<button onclick="changeChannel(this,'channelunavailable.html')" class="channelEPG">
 	<p class="EPGtext">003 IMAGENTV</p>
 	</button>
 	<div class="contentEPG">
 	<p class="contentEPGtext">PLACEHOLDER</p>
 	</div>
-	<button onclick="changeChannel4()" class="channelEPG">
+	<button onclick="changeChannel(this,'online/player3.html?get=https://channel02-notusa.akamaized.net/hls/live/2023914/event01/index.m3u8')" class="channelEPG">
 	<p class="EPGtext">004 FORO</p>
 	</button>
 	<div class="contentEPG">
 	<p class="contentEPGtext">PLACEHOLDER</p>
 	</div>
-	<button onclick="changeChannel5()" class="channelEPG">
+	<button onclick="changeChannel(this,'channelunavailable.html')" class="channelEPG">
 	<p class="EPGtext">005 CANAL5</p>
 	</button>
 	<div class="contentEPG">
