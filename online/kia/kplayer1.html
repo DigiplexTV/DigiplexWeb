@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-y: hidden; overflow-x: hidden;">
 <head>
   <title>Kia Player</title>
 </head>
@@ -7,6 +7,6 @@
 <script>
   document.getElementById("player").src = window.location.href.searchParams.get("get");
 </script>
-<video id="player" style="min-height: 100dvh;" />
+<video id="player" style="min-height: 100dvh;" controls autoplay/>
 </body>
 </html>
