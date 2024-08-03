@@ -14,12 +14,9 @@
     id="my-video"
     class="video-js"
     controls
-    preload="auto"
-    width="640"
-    height="264"
+    preload="yes"
     poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}"
-  >
+    data-setup="{}" style="object-fit: full;">
     <script>
     document.getElementById("my-video").src = window.location.href.searchParams.get("get");
     </script>
