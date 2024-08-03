@@ -104,15 +104,19 @@ body {
 }
 
 .channelEPGA {
-  left: 344px;
-  margin-top: -52px;
-  position: relative;
-  width: 314px;
-  height: 46px;
-  background: #2a4b8e;
-  border-radius: 12px;
-  border: 0px;
-  display: block;
+    margin: 8px;
+    left: 351px;
+    margin-top: -54px;
+    position: relative;
+    width: 314px;
+    height: 46px;
+    background: #2a4b8e;
+    border-radius: 12px;
+    border: 0px;
+    display: block;
+}
+.channelEPGA.active {
+    background: #ffc75c;
 }
 
 .contentEPG {
