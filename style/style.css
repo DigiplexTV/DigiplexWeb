@@ -103,6 +103,17 @@ body {
   margin-left: 16px;
 }
 
+.channelEPGA {
+  width: 314px;
+  height: 46px;
+  background: #2a4b8e;
+  margin: 6px;
+  border-radius: 12px;
+  border: 0px;
+  display: block;
+  margin-left: 16px;
+}
+
 .contentEPG {
   width: 310px;
   height: 46px;
