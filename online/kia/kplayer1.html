@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kia Player</title>
   <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
@@ -9,17 +8,20 @@
 </head>
 
 <body>
-  
   <video
     id="my-video"
     class="video-js"
     controls
     preload="auto"
-    autoplay
+    width="1000"
+    height="800"
     poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}" style="object-fit: full;">
+    data-setup="{}"
+    autoplay="autoplay"
+  >
+    <source id="player" src="" />
     <script>
-    document.getElementById("my-video").src = window.location.href.searchParams.get("get");
+      document.getElementById("player").src = new URLSearchParams(document.location.search).get("get");
     </script>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
