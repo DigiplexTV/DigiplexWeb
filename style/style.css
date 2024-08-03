@@ -104,10 +104,12 @@ body {
 }
 
 .channelEPGA {
+  left: 344px;
+  margin-top: -52px;
+  position: relative;
   width: 314px;
   height: 46px;
   background: #2a4b8e;
-  margin: 6px;
   border-radius: 12px;
   border: 0px;
   display: block;
