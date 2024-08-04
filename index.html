@@ -17,7 +17,9 @@
 			        return str.toUpperCase();
 			  }
                           function changeChannel(newChannel,url,description,airingTimes) {
-				
+				var date = new Date();
+				var day = date.getDay();
+				day = day.toString();
 				var alreadyActive = document.querySelectorAll(".active");
 				[].forEach.call(alreadyActive, function(el) {
 				    el.classList.remove("active");
@@ -28,7 +30,7 @@
 				}
 				document.getElementById("IPTV").src = url;
 				document.getElementById("program-name").textContent = capitalizeAllLetters(description);
-				document.getElementById("program-time").textContent = airingTimes[new Date().getDay().toString()];
+				if (airingTimes != null) {document.getElementById("program-time").textContent = airingTimes[day];} else {document.getElementById("program-time").textContent = "AIRING TIMES UNKNOWN";}
 			  }
 			</script>
 		</div>
