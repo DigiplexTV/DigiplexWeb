@@ -17,7 +17,7 @@
 			        return str.toUpperCase();
 			  }
                           function changeChannel(newChannel,url,description,airingTimes) {
-				var date = new Date().getDay();
+				var date = new Date().getDay().toString();
 				var alreadyActive = document.querySelectorAll(".active");
 				[].forEach.call(alreadyActive, function(el) {
 				    el.classList.remove("active");
