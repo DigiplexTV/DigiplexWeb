@@ -28,11 +28,7 @@
 				}
 				document.getElementById("IPTV").src = url;
 				document.getElementById("program-name").textContent = capitalizeAllLetters(description);
-				if (airingTimes != "none" || airingTimes == null) {
-					document.getElementById("program-time").textContent = "UNKNOWN";
-				} else if (airingTimes == "24/7") {
-					document.getElementById("program-name").textContent = "24/7";
-				} else {document.getElementById("program-time").textContent = airingTimes[new Date().getDay().toString()];}
+				document.getElementById("program-time").textContent = airingTimes[new Date().getDay().toString()];
 			  }
 			</script>
 		</div>
